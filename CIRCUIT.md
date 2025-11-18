@@ -1,24 +1,16 @@
-# Analytical Simulation — Circuit Schematic
+# Circuit Design And Simulation Without Software — Circuit Notes
 
-- Course: Circuit Design and Simulation without Software
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/multisim-live-multisim-live-circuit-design-simulation-without-software/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Embedded Systems board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Example
+## Wiring Checklist
 
-- RC low-pass filter schematic and hand calculations.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- Vin --[R]--+-- Vout
-           |
-          [C]
-           |
-          GND
-```
-
-## Purchase With Discount
-
-Get a discounted price and master analytical simulation — use the link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
